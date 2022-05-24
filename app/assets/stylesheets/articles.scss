@@ -1,3 +1,29 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+a {
+    text-decoration: none;
+    color: grey;
+    &:hover {
+      color: rgb(113, 110, 110);
+    }
+  }
+
+.banner {
+  background-color: rgba(242, 236, 236, 0.5);
+  border-bottom: 1px solid rgb(205, 200, 200);
+  padding-top: 20px;
+}
+.content{
+  width: 40%;
+  margin: 100px auto;
+  text-align: left;
+  a {
+    color: #187498;
+    &:hover {
+      color: #125c79;
+      text-decoration: underline;
+    }
+  }
+
+}

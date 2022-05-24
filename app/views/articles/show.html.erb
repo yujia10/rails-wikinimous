@@ -1,15 +1,20 @@
-<div class="banner">
-<p>Wikinimous</p>
-<p><%= link_to 'New article', new_article_path %></p>
+<div class="banner navbar navbar-default">
+<div class="container-fluid">
+<p><%= link_to 'Wikinimous', articles_path %></p>
+<p><%= link_to 'New article', new_article_path, :class=>"nav navbar-nav navbar-right" %></p>
 </div>
+</div>
+
+<div class="content">
 <h2>
 <%= @article.title %>
-<%= link_to 'Edit', edit_article_path %>
+</h2>
+<%= link_to "Edit", edit_article_path %>
 <%= link_to "Delete",
             article_path(@article),
             method: :delete,
             data: { confirm: "Are you sure?" } %>
-</h2>
 <p><%= @article.content %></p>
 <hr>
 <%= link_to 'Back to list', articles_path %>
+</div>

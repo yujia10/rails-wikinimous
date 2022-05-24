@@ -1,8 +1,13 @@
-<div class="banner">
-<p>Wikinimous</p>
-<p><%= link_to 'New article', new_article_path %></p>
+<div class="banner navbar navbar-default">
+<div class="container-fluid">
+<p><%= link_to 'Wikinimous', articles_path %></p>
+<p><%= link_to 'New article', new_article_path, :class=>"nav navbar-nav navbar-right" %></p>
 </div>
+</div>
+
+<div class="content">
 <%= render "form", article: @article %>
 <p>
 <%= link_to 'Show', article_path(@article) %> | <%= link_to 'Back', articles_path %>
 </p>
+</div>
